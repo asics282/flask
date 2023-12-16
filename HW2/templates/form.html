@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block title %} Ввод {% endblock %}
+
+{% block content %}
+    <form action="/submit" method="post">
+    <input type="text" name="num" placeholder="Введите число">
+    <input type="submit" value="Отправить">
+    </form>>
+{% endblock %}

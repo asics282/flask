@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %} Титул {% endblock %}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Квадрат числа</h1>
+    </header>
+    <div class="container">
+        <div id="body-content">
+            {% block content %}
+            Страница не заполнена
+            {% endblock %}
+        </div>
+    </div>
+</body>
+<footer> <p>Квадрат числа © 2022</p> </footer>
+</html>
